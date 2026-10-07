@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #070a0f;
+  color: white;
+}
+
+/* Área principal */
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Painel */
+.painel {
+  width: 100%;
+  max-width: 650px;
+  padding: 30px;
+  background: #101720;
+  border: 1px solid #1e90ff;
+  border-radius: 18px;
+  box-shadow: 0 0 30px rgba(30, 144, 255, 0.15);
+}
+
+/* Título */
+.painel h1 {
+  margin: 0;
+  text-align: center;
+  color: #1e90ff;
+  font-size: 30px;
+}
+
+/* Subtítulo */
+.subtitulo {
+  text-align: center;
+  color: #8b98a8;
+  margin: 10px 0 28px;
+}
+
+/* Formulário */
+.formulario {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+/* Campo */
+.formulario input {
+  flex: 1;
+  padding: 14px 16px;
+  border: 1px solid #293746;
+  border-radius: 10px;
+  outline: none;
+  background: #080c12;
+  color: white;
+  font-size: 15px;
+}
+
+.formulario input::placeholder {
+  color: #657180;
+}
+
+.formulario input:focus {
+  border-color: #1e90ff;
+}
+
+/* Botão adicionar */
+.formulario button {
+  padding: 0 22px;
+  border: none;
+  border-radius: 10px;
+  background: #1e90ff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.formulario button:hover {
+  background: #087bd9;
+}
+
+/* Lista */
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Ideia */
+.ideia {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  background: #0b1119;
+  border: 1px solid #1c2936;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.ideia:hover {
+  border-color: #1e90ff;
+}
+
+/* Checkbox */
+.ideia input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #1e90ff;
+  cursor: pointer;
+}
+
+/* Texto */
+.ideia span {
+  flex: 1;
+  color: #e6edf5;
+}
+
+/* Ideia concluída */
+.ideia.concluida span {
+  color: #687585;
+  text-decoration: line-through;
+}
+
+/* Botão remover */
+.botao-remover {
+  border: none;
+  background: transparent;
+  color: #ff5757;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.botao-remover:hover {
+  background: #241416;
+  color: #ff3030;
+}
+
+/* Contador */
+.contador {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid #1c2936;
+  text-align: center;
+  color: #8b98a8;
+  font-size: 14px;
+}
+
+.contador strong {
+  color: #1e90ff;
+}
+
